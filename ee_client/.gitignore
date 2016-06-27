@@ -5,3 +5,4 @@ Demo.app
 /Library/
 /Temp/
 /Demo.app
+*.csproj
