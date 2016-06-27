@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1580A1E6-FC86-8383-611F-5F9B4B6EA57F}</ProjectGuid>
+    <ProjectGuid>{E5A845FF-3116-8CB0-3984-1E1CD4AFDA2B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,24 +45,103 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Client Assets\CameraDirection.cs" />
+     <Compile Include="Assets\Client Assets\ChangeCamera.cs" />
      <Compile Include="Assets\Client Assets\ClickMove.cs" />
      <Compile Include="Assets\Client Assets\CreateTerrain.cs" />
+     <Compile Include="Assets\Client Assets\CreateTerrainMesh.cs" />
      <Compile Include="Assets\Client Assets\HandleMovement.cs" />
      <Compile Include="Assets\Client Assets\NavigatePosition.cs" />
      <Compile Include="Assets\Client Assets\NetworkController.cs" />
      <Compile Include="Assets\Client Assets\NetworkMove.cs" />
-     <None Include="Assets\Standard Assets\SocketIO\JSONObject\readme.txt" />
-     <None Include="Assets\Standard Assets\SocketIO\Readme.txt" />
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\SocketIO\JSONObject\JSONObject.cs" />
+     <Compile Include="Assets\SocketIO\JSONObject\JSONTemplates.cs" />
+     <Compile Include="Assets\SocketIO\JSONObject\VectorTemplates.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\Ack.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\Decoder.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\Encoder.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\EnginePacketType.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\Packet.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\Parser.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\SocketIOComponent.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\SocketIOEvent.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\SocketIOException.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\SocketIO\SocketPacketType.cs" />
+     <Compile Include="Assets\SocketIO\Scripts\Test\TestSocketIO.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\AssemblyInfo.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\ByteOrder.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\CloseEventArgs.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\CloseStatusCode.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\CompressionMethod.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\ErrorEventArgs.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Ext.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Fin.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\HandshakeBase.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\HandshakeRequest.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\HandshakeResponse.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\LogData.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\LogLevel.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Logger.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Mask.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\MessageEventArgs.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\AuthenticationBase.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\AuthenticationChallenge.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\AuthenticationResponse.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\AuthenticationSchemes.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\Chunk.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\ChunkStream.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\ChunkedRequestStream.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\Cookie.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\CookieCollection.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\CookieException.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\EndPointListener.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\EndPointManager.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpBasicIdentity.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpConnection.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpDigestIdentity.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpHeaderInfo.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpHeaderType.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpListener.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpListenerContext.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpListenerException.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpListenerPrefixCollection.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpListenerRequest.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpListenerResponse.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpStatusCode.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpStreamAsyncResult.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpUtility.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\HttpVersion.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\InputChunkState.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\InputState.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\LineState.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\ListenerAsyncResult.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\ListenerPrefix.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\NetworkCredential.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\QueryStringCollection.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\ReadBufferState.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\RequestStream.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\ResponseStream.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\Security\SslStream.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\WebHeaderCollection.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\WebSockets\HttpListenerWebSocketContext.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\WebSockets\TcpListenerWebSocketContext.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Net\WebSockets\WebSocketContext.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Opcode.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\PayloadData.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\Rsv.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\WebSocket.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\WebSocketException.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\WebSocketFrame.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\WebSocketState.cs" />
+     <Compile Include="Assets\SocketIO\WebsocketSharp\WebSocketStream.cs" />
+     <None Include="Assets\SocketIO\JSONObject\readme.txt" />
+     <None Include="Assets\SocketIO\Readme.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{208BF383-538F-F651-69B4-C96C64A965AD}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
